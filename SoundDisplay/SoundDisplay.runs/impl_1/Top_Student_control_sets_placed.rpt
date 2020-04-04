@@ -1,0 +1,96 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Apr  2 15:52:26 2020
+| Host         : HaoYuan-PC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
+| Design       : Top_Student
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    27 |
+| Unused register locations in slices containing registers |    68 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            4 |
+|      8 |            4 |
+|     10 |            3 |
+|     12 |            1 |
+|     14 |            1 |
+|    16+ |           14 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             180 |           30 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             202 |           32 |
+| Yes          | No                    | No                     |             258 |           49 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              68 |           17 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------+-----------------------------------------+------------------------------------------------+------------------+----------------+
+|      Clock Signal      |              Enable Signal              |                Set/Reset Signal                | Slice Load Count | Bel Load Count |
++------------------------+-----------------------------------------+------------------------------------------------+------------------+----------------+
+|  CLK100MHZ_IBUF_BUFG   | seg[2]_i_2_n_0                          | seg[2]_i_1_n_0                                 |                1 |              2 |
+|  CLK100MHZ_IBUF_BUFG   | seg[0]_i_2_n_0                          | seg[0]_i_1_n_0                                 |                1 |              2 |
+|  CLK100MHZ_IBUF_BUFG   | seg[4]_i_2_n_0                          | seg[4]_i_1_n_0                                 |                1 |              2 |
+| ~clk6p25m_BUFG         |                                         |                                                |                1 |              2 |
+|  CLK100MHZ_IBUF_BUFG   | an[3]_i_1_n_0                           |                                                |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG   | cycle0                                  |                                                |                1 |              8 |
+|  CLK100MHZ_IBUF_BUFG   | cycle10                                 |                                                |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG   | seg[6]_i_2_n_0                          | seg[6]_i_1_n_0                                 |                4 |              8 |
+|  J_MIC3_Pin1_OBUF_BUFG | state[4]_i_1_n_0                        |                                                |                3 |             10 |
+|  clk6p25m_BUFG         |                                         |                                                |                4 |             10 |
+|  clk6p25m_BUFG         | dev4/nolabel_line123/x_reference_reg[0] | dev4/nolabel_line123/x_reference_reg[5]        |                2 |             10 |
+|  clk6p25m_BUFG         | dev4/nolabel_line123/p_0_in[0]          |                                                |                3 |             12 |
+|  clk6p25m_BUFG         | dev4/game_mode1847_out                  |                                                |                4 |             14 |
+|  clk6p25m_BUFG         | dev4/nolabel_line123/p_0_in[0]          | dev4/nolabel_line123/SR[0]                     |                5 |             20 |
+|  CLK100MHZ_IBUF_BUFG   |                                         | dev1/clk_out0                                  |                3 |             22 |
+| ~dev2/J_MIC3_Pin4_OBUF |                                         |                                                |                3 |             24 |
+|  CLK100MHZ_IBUF_BUFG   |                                         | J_MIC3_Pin1_OBUF_BUFG                          |                3 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG |                                         |                                                |                5 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG | dev2/E[0]                               | max                                            |                3 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG |                                         | countf[15]_i_1_n_0                             |                5 |             32 |
+|  J_MIC3_Pin1_OBUF_BUFG | led[15]_i_1_n_0                         |                                                |                8 |             32 |
+| ~clk6p25m_BUFG         |                                         | dev4/nolabel_line123/frame_counter[16]_i_1_n_0 |                5 |             34 |
+| ~clk6p25m_BUFG         | dev4/nolabel_line123/delay[0]_i_1_n_0   |                                                |                5 |             40 |
+|  clk6p25m_BUFG         | dev4/pipe[2]_i_1_n_0                    |                                                |               12 |             62 |
+| ~clk6p25m_BUFG         | dev4/nolabel_line123/state              |                                                |                8 |             64 |
+| ~clk6p25m_BUFG         |                                         | dev4/nolabel_line123/spi_word[39]_i_1_n_0      |               16 |             90 |
+|  CLK100MHZ_IBUF_BUFG   |                                         |                                                |               17 |            120 |
++------------------------+-----------------------------------------+------------------------------------------------+------------------+----------------+
+
+

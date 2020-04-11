@@ -1,5 +1,5 @@
 # EE2026 Sound Display and Entertainment System
-# NUS EE2026 AY19/20 S2 project (YIFENG and HAOYUAN)
+NUS EE2026 AY19/20 S2 project (YIFENG and HAOYUAN)
 
 ## For use on Basys 3 with microphone (port A) and OLED (port C) Pmod attachments.
 
